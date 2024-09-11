@@ -6,6 +6,7 @@ class Model extends ChangeNotifier{
   late String image;
   late String mobileNumber;
   late String password;
+  bool get isValid => name.isNotEmpty && email.isNotEmpty && image.isNotEmpty && mobileNumber.isNotEmpty && password.isNotEmpty;
   int counter=0;
   nameNotifier(){
     notifyListeners();
