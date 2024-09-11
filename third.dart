@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'Model.dart';
+import 'model.dart';
 
 class Third extends StatefulWidget {
   const Third({super.key});
