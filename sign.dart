@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +17,7 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan.shade100,
+      backgroundColor: Colors.brown.shade100,
       body: Container(
         margin: EdgeInsets.all(35),
         child: SingleChildScrollView(
@@ -99,8 +98,8 @@ class _SignUpState extends State<SignUp> {
                           contentPadding: EdgeInsets.only(top: 14),
                         ),
                           onChanged: (value){
-                            model.name=value;
-                            model.nameNotifier();
+                            model.email=value;
+                            model.emailNotifier();
                           }
 
                       ),
@@ -134,8 +133,8 @@ class _SignUpState extends State<SignUp> {
                           contentPadding: EdgeInsets.only(top: 14),
                         ),
     onChanged: (value){
-    model.name=value;
-    model.nameNotifier();
+    model.image=value;
+    model.imageNotifier();
     }
                       ),
                     ),
@@ -166,8 +165,8 @@ class _SignUpState extends State<SignUp> {
                           border: InputBorder.none,
                           contentPadding: EdgeInsets.only(top: 10),
                         ),onChanged: (value){
-                        model.name=value;
-                        model.nameNotifier();
+                        model.mobileNumber=value;
+                        model.mobileNumberNotifier();
                       }
                       ),
                     ),
@@ -199,8 +198,8 @@ class _SignUpState extends State<SignUp> {
                           contentPadding: EdgeInsets.only(top: 14),
                         ),
                           onChanged: (value){
-                            model.name=value;
-                            model.nameNotifier();
+                            model.password=value;
+                            model.passwordNotifier();
                           }
                       ),
                     ),
@@ -263,4 +262,5 @@ class _SignUpState extends State<SignUp> {
     );
   }
 }
+
 
